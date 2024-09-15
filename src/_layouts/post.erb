@@ -1,0 +1,52 @@
+---
+layout: default
+---
+
+<article>
+  <%= yield %>
+  <section class="article-footer">
+    <p>Created: <time datetime="<%= resource.data.date %>"><%=resource.data.date.to_date %></time></p>
+    <p>Last modified: <time datetime="<%= resource.data.lastmod %>"><%=resource.data.lastmod.to_date %></time></p>
+    <a class="reply-button"
+      href="mailto:websitecontact.hush341@passmail.net?subject=<%= title %>"
+      >Reply to this post via email.</a
+      >
+    <a href="https://notbyai.fyi" target="_blank" class=""
+      ><img class="ai-badge"
+        src="/assets/not-by-ai.svg"
+        alt="Written by Human, Not by AI"
+      /></a
+    >
+  </section>
+
+</article>
+
+<div class="card card--page">
+  <h2 class="card__title">Keep Reading</h2>
+  <div class="post-nav-buttons">
+    <% if resource.next %>
+      <%= link_to resource.next.data.title, resource.next, class: "post-nav-buttons__button" %>
+    <% end %>
+    <% if resource.previous %>
+      <%= link_to resource.previous.data.title, resource.previous, class: "post-nav-buttons__button" %>
+    <% end %>
+  </div>
+  <div class="tag-container tag-container--post">
+    <% data.tags.each do |tag| %>
+      <a class="tag-container__tag" href=<%= relative_url '/t/'+tag %>>
+        <%= tag %>
+      </a>
+    <% end %>
+  </div>
+</div>
+
+<% if resource.collection.label.to_s == "peace-corps" %>
+  <div class="card card--page">
+    <p>
+      <em
+        >DISCLAIMER: The contents of this website are mine personally and do not
+        reflect any position of the U.S. Government or the Peace Corps.</em
+      >
+    </p>
+  </div>
+<% end %>

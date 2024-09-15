@@ -1,0 +1,121 @@
+---
+title: Westley Winks
+layout: index
+---
+
+<section class="card card--recent-links">
+  <h2 class="card__title">Recent links</h2>
+  <div class="card__content">
+    <%= markdownify do %>
+      - [How to Live By Your Values This
+      Year](https://every.to/no-small-plans/how-to-identify-and-live-your-life-by-your-values) by Casey Rosengren and a
+      hat tip to Sasha Chapin's [I was not acting like me, are you acting like
+      you?](https://sashachapin.substack.com/p/i-was-not-acting-like-me-are-you). Good articles about values and how we
+      live (or don't live) in alignment with them.
+        - I really liked the idea of a value being a `verb + adverb`. A verb is actionable and an adverb defines how you
+      do that verb. For example, instead of having "wisdom" as a value, it could be changed to "learning humbly."
+        - I added a prompt to my daily journal entry: "What is one behavior from today that connects to your values?"
+      - [Graphs World](https://www.graphs.world/). A daily puzzle that shows you some graph and you have to select the
+      dataset that fits the graph. The graphs aren't very colorblind friendly but still fun.
+      - [The Moral Implications of Being a Moderately Successful Computer Scientist and a
+      Woman](https://www.sigops.org/2024/the-moral-implications-of-being-a-moderately-successful-computer-scientist-and-a-woman/)
+      by Irene Y. Zhang. It's easy to hand-wave the existence of sexism away by saying "yeah, yeah, I would never
+      discriminate against a woman, I treat men and women equally, etc." It's important to remember the unconscious bias
+      and moral fallacies men hold towards women, especially in STEM fields.
+      [Entitled](http://www.katemanne.net/entitled.html) by Kate Mann has been added to my reading list.
+      > For example, my very *existence* as a moderately young, moderately successful computer scientist threatens some
+      men’s sense of identity, thus making them uncomfortable and/or lash out. But if a successful woman in computer
+      science makes men in our community uncomfortable, then we are not likely to have too many successful women in the
+      community.
+      <% end %>
+  </div>
+
+</section>
+
+<section class="card card--latest">
+  <h2 class="card__title card__title--latest">Latest posts</h2>
+  <div class="card__content">
+    <ul class="latest-posts-list">
+      <% posts=collections.b.resources + collections.p.resources + collections["peace-corps"].resources %>
+        <% posts.sort_by! { |post| post.date.to_date }.reverse! %>
+          <% posts[0...10].each do |post| %>
+            <li class="latest-posts-list__item">
+              <h3 class="latest-posts-list__item-title">
+                <%= link_to post.data.title, post.relative_url, class: "latest-posts-list__item-title" %>
+              </h3>
+              <time class="latest-posts-list__date" datetime="<%= post.date %>">
+                <%= post.date.to_date %>
+              </time>
+            </li>
+            <% end %>
+    </ul>
+  </div>
+</section>
+
+
+<section id="contact" class="card card--elsewhere">
+  <h2 class="card__title card__title--elsewhere">Elsewhere</h2>
+  <div class="card__content">
+    <div class="tag-container">
+      <a href="mailto://websitecontact.hush341@passmail.net" target="_blank" class="tag-container__tag tag-container__tag--social">Email me</a>
+      <a href="https://social.lol/@ww" class="tag-container__tag--social tag-container__tag" target="_blank">Mastodon</a>
+      <a href="https://www.linkedin.com/in/westley-winks" class="tag-container__tag--social tag-container__tag" target="_blank">LinkedIn</a>
+      <a href="https://github.com/Westley-Winks" class="tag-container__tag--social tag-container__tag" target="_blank">GitHub</a>
+      <a href="https://matrix.to/#/@ww:omg.lol" class="tag-container__tag--social tag-container__tag" target="_blank">Matrix</a>
+      <a href="https://discourse.32bit.cafe/" class="tag-container__tag tag-container__tag--social">32-Bit Cafe</a>
+      <a href="https://ww.omg.lol/" class="tag-container__tag tag-container__tag--social">omg.lol</a>
+    </div>
+  </div>
+</section>
+
+<section class="card card--tags">
+  <h2 class="card__title card__title--tags">Browse tags</h2>
+  <div class="card__content">
+    <div class="tag-container">
+      <% site.tags.keys.each do |tag| %>
+        <%= link_to tag, "/t/#{tag}" , class: "tag-container__tag tag-container__tag--home" %>
+          <% end %>
+    </div>
+</section>
+
+<section class="card card--about">
+  <h2 class="card__title card__title--about">Who am I?</h2>
+  <div class="card__content">
+    <p>
+      My name is Westley Winks. I try to live my life with integrity by
+      living according to my core values:
+    </p>
+    <ul>
+      <li>
+        <strong>Learning.</strong> I live for the pursuit of learning and it
+        gives my life meaning and purpose. I stay curious and am always looking
+        for new information and skills. For me, learning looks like <%= link_to 'reading books', 'collections/_pages/b.md' %>, <%= link_to 'coding', 'https://github.com/Westley-Winks' %>, solving
+        puzzles, reading blog posts, <%= link_to 'writing', 'collections/_pages/p.md' %>, and
+        trying new things. One of my weaknesses is learning <em>for the sake of learning</em> and staying on the
+        theoretical side of things instead of applying them.
+      </li>
+      <li>
+        <strong>Service to others.</strong> One of my roles in this life is to
+        compassionately serve others, supporting them and nurturing their growth.
+        I enjoy being known as &quot;the guy&quot; who people call, knowing that
+        I will put all my effort into helping them. Serving others looks like
+        <%= link_to 'volunteering', 'collections/_pages/peace-corps.md' %>, choosing the "support role"
+        in any game I play, and <%= link_to 'writing', 'collections/_pages/p.md' %>.
+        
+      </li>
+    </ul>
+  </div>
+</section>
+
+<section class="card card--colophon">
+  <h2 class="card__title card__title--colophon">Colophon</h2>
+  <div class="card__content">
+    <%= markdownify do %>
+      - [Alessandro Muraro](https://alexmuraro.me/) - design inspiration
+      - [Bridgetown](https://bridgetown.com) - static site generator
+      - [SCSS](https://sass-lang.com/) - styling
+      - [Open Props](https://open-props.style/) - CSS variables
+      - [Netlify](https://www.netlify.com/) - hosting
+      <% end %>
+  </div>
+</section>

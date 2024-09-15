@@ -1,0 +1,31 @@
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+<link rel="icon" type="image/svg+xml" href="/favicon.png" />
+<meta name="generator" content="Bridgetown" />
+
+<% resource_title = strip_html(strip_newlines(title)) %>
+<title>
+  <% if resource_title != "Westley Winks" %>
+    <%= resource_title %> | <%= metadata.title %>
+  <% else %>
+    <%= metadata.title %>
+  <% end %>
+</title>
+
+<% if resource.data.description %>
+  <meta name="description" content="<%= resource.data.description %>" />
+  <meta property="og:description" content="<%= resource.data.description %>" />
+<% else %>
+  <meta name="description" content="<%= metadata.description %>" />
+  <meta property="og:description" content="<%= metadata.description %>" />
+<% end %>
+
+<!-- Open Graph / Facebook -->
+<meta property="og:type" content="website" />
+<meta property="og:url" content=<%= "https://wwinks.com" + resource.relative_url %> />
+<meta property="og:title" content=<%= title %> />
+
+<link rel="stylesheet" href="<%= asset_path :css %>" />
+<script src="<%= asset_path :js %>" defer></script>
+<%= live_reload_dev_js %>

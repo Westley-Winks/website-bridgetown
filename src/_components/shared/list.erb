@@ -1,0 +1,30 @@
+<ul class="content-list">
+  <% unless @collection.is_a? Array %>
+    <% @collection = @collection.resources %>
+  <% end %>
+  <% @collection.each do |item| %>
+    <li class="content-list__item card">
+      <a class="content-list__link" href="<%= item.relative_url %>">
+        <h2 class="content-list__title card__title"><%= item.data.title %></h2>
+      </a>
+      <time datetime="<%= item.data.date %>"><%= item.data.date.to_date %></time>
+      <% if item.data.summary %>
+        <p><%= markdownify item.data.summary%></p>
+      <% else %>
+        <p><%= markdownify item.data.description %></p>
+      <% end %>
+      <div class="content-list__button-container">
+        <%= link_to 'Read', item, class: 'content-list__read-button' %>
+        <% unless item.data.tags.empty? %>
+          <div class="tag-container">
+            <% item.data.tags.each do |tag| %>
+              <a href="/t/<%= tag %>" class="tag-container__tag">
+                <%= tag %>
+              </a>
+            <% end %>
+          </div>
+        <% end %>
+      </div>
+    </li>
+  <% end %>
+</ul>

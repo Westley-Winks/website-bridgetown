@@ -1,0 +1,15 @@
+<!doctype html>
+<html lang="<%= site.locale %>">
+  <head>
+    <%= render "head", metadata: site.data._data.site_metadata, title: data.title %>
+  </head>
+  <body>
+    <%= render Shared::Navbar.new(metadata: site.metadata, resource: resource) %>
+
+    <main class=<%= resource.data.layout %>>
+      <%= yield %>
+    </main>
+
+    <%= render "footer", metadata: site.metadata %>
+  </body>
+</html>

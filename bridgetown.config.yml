@@ -1,0 +1,35 @@
+url: "https://wwinks.com"
+
+permalink: simple
+template_engine: erb
+
+collections_dir: collections
+
+collections:
+  b:
+    output: true
+    permalink: /:collection/:slug/
+    sort_by: date
+    sort_direction: descending
+  peace-corps:
+    output: true
+    permalink: /:collection/:slug/
+    sort_by: date
+    sort_direction: descending
+  p:
+    output: true
+    permalink: /:collection/:slug/
+    sort_by: date
+    sort_direction: descending
+  w:
+    output: true
+    permalink: /:collection/:slug/
+    sort_by: date
+    sort_direction: descending
+
+defaults:
+  - scope:
+      path: "collections/*"
+    values:
+      layout: "post"
+      template_engine: erb

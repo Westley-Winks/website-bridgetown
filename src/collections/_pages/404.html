@@ -1,0 +1,29 @@
+---
+permalink: /404.html
+layout: page
+title: 404
+---
+
+<div class="card card--page">
+  <h2 class="card__title">Page Not Found :(</h2>
+  <div class="card__content">
+    <p>Try these instead.</p>
+
+    <% posts=collections.b.resources + collections.p.resources + collections["peace-corps"].resources %>
+    <% posts.sort_by! { |post| post.date.to_date }.reverse! %>
+
+    <div class="post-nav-buttons">
+      <% posts[0...4].each do |post| %>
+        <%= link_to post.data.title, post.relative_url, class: "post-nav-buttons__button" %>
+      <% end %>
+    </div>
+
+    <div class="tag-container tag-container--post">
+      <% site.tags.keys.sample(4).each do |tag| %>
+        <a class="tag-container__tag" href=<%= relative_url '/t/'+tag %>>
+          <%= tag %>
+        </a>
+      <% end %>
+    </div>
+  </div>
+</div>

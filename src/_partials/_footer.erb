@@ -1,0 +1,22 @@
+<footer class="card card--footer">
+  <div class="footer">
+    <p>Your Most Humble and Obedient Servant</p>
+    <small
+      >&copy; <%= Date.today.year %> Westley Winks. The content of this page is licensed
+      under
+      <a
+        href="https://creativecommons.org/licenses/by/4.0/?ref=chooser-v1"
+        target="_blank"
+        rel="license noopener noreferrer"
+        style="display:inline-block;">CC BY 4.0</a
+      >
+    </small>
+    <div>
+      <a href="/">home</a> |
+      <%= link_to 'peace corps', '/peace-corps/', class: "footer__link" %> |
+      <%= link_to 'posts', '/p/', class: "footer__link" %> |
+      <%= link_to 'books', '/b/', class: "footer__link" %> |
+      <%= link_to 'weeknotes', '/w/', class: "footer__link" %>
+    </div>
+  </div>
+</footer>
