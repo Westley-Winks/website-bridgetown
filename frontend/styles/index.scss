@@ -40,8 +40,9 @@ a {
 
 
 :is(:not(pre) > code) {
-  background: var(--red-0);
+  background: var(--gray-2);
   padding: var(--border-size-2) var(--border-size-1);
+  word-break: break-all;
 }
 
 h1,
