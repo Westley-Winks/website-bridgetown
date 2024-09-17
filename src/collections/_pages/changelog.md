@@ -18,6 +18,10 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 ## 2024-09-17
 
 - Added book notes for [None Of This Is True](/b/none-of-this-is-true/)
+- Changed various styles:
+  - Buttons are now "squishy". It looks like they actually get pushed in.
+  - Fixed footer links so they all look the same
+  - Center body in ultrawide displays
 
 ## 2024-09-16
 
