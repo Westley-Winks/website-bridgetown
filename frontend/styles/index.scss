@@ -272,9 +272,17 @@ main.index {
     padding: var(--size-1) var(--size-2);
     text-decoration: none;
 
-    &:hover {
+    &:hover,&:focus {
       box-shadow: var(--size-2) var(--size-2) var(--gray-12);
       transform: translate(var(--size-00), var(--size-00));
+
+      &:active {
+        transform: none;
+      }
+    }
+    &:active {
+      box-shadow: none;
+      transform: translate(var(--size-1), var(--size-1));
     }
   }
 
@@ -343,9 +351,17 @@ main.index {
     border: var(--border-size-2) solid;
     box-shadow: var(--size-1) var(--size-1) var(--gray-12);
 
-    &:hover {
+    &:hover, &:focus {
       box-shadow: var(--size-2) var(--size-2) var(--gray-12);
       transform: translate(var(--size-00), var(--size-00));
+
+      &:active {
+        transform: none;
+      }
+    }
+    &:active {
+      box-shadow: none;
+      transform: translate(var(--size-1), var(--size-1));
     }
   }
 }
@@ -373,10 +389,18 @@ main.index {
       background: var(--lime-4);
     }
 
-    &:hover {
+    &:hover,&:focus {
       box-shadow: var(--size-2) var(--size-2) var(--gray-12);
       transform: translate(var(--size-00), var(--size-00));
-    }
+
+        &:active {
+          transform: none;
+        }
+      }
+      &:active {
+        box-shadow: none;
+        transform: translate(var(--size-1), var(--size-1));
+      }
   }
 
   &--post {
@@ -418,10 +442,18 @@ article {
   }
 
   .ai-badge {
-    &:hover {
+    &:hover,&:focus {
       border-radius: var(--radius-2);
       box-shadow: var(--size-2) var(--size-2) var(--gray-12);
       transform: translate(var(--size-00), var(--size-00));
+
+        &:active {
+          transform: none;
+        }
+      }
+      &:active {
+        box-shadow: none;
+        transform: translate(var(--size-1), var(--size-1));
     }
   }
 
@@ -449,9 +481,17 @@ article {
     flex: 1 1 0%;
     min-width: var(--size-fluid-9);
 
-    &:hover {
+    &:hover,&:focus {
       box-shadow: var(--size-2) var(--size-2) var(--gray-12);
       transform: translate(var(--size-00), var(--size-00));
+
+      &:active {
+        transform: none;
+      }
+    }
+    &:active {
+      box-shadow: none;
+      transform: translate(var(--size-1), var(--size-1));
     }
   }
 }
@@ -463,8 +503,16 @@ article {
   box-shadow: var(--size-1) var(--size-1) var(--gray-12);
   padding: var(--size-fluid-1) var(--size-fluid-2);
 
-  &:hover {
+  &:hover,&:focus {
     box-shadow: var(--size-2) var(--size-2) var(--gray-12);
     transform: translate(var(--size-00), var(--size-00));
+
+    &:active {
+      transform: none;
+    }
+  }
+  &:active {
+    box-shadow: none;
+    transform: translate(var(--size-1), var(--size-1));
   }
 }
