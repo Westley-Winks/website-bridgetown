@@ -15,6 +15,10 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 - `Removed` for now removed features or content.
 - `Fixed` for any typos or bug fixes.
 
+## 2024-09-17
+
+- Added book notes for [None Of This Is True](/b/none-of-this-is-true/)
+
 ## 2024-09-16
 
 - Changed latest posts section to a flexbox so that it expands to fills the empty space
