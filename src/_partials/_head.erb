@@ -1,7 +1,7 @@
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<link rel="icon" type="image/svg+xml" href="/favicon.png" />
+<!-- <link rel="icon" type="image/svg+xml" href="/assets/favicon.png" /> -->
 <meta name="generator" content="Bridgetown" />
 
 <% resource_title = strip_html(strip_newlines(title)) %>
@@ -24,7 +24,7 @@
 <!-- Open Graph / Facebook -->
 <meta property="og:type" content="website" />
 <meta property="og:url" content=<%= "https://wwinks.com" + resource.relative_url %> />
-<meta property="og:title" content=<%= title %> />
+<meta property="og:title" content="<%= title %>" />
 
 <link rel="stylesheet" href="<%= asset_path :css %>" />
 <script src="<%= asset_path :js %>" defer></script>
