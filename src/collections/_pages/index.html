@@ -35,7 +35,7 @@ layout: index
 <section class="card card--latest">
   <h2 class="card__title card__title--latest">Latest posts</h2>
     <ul class="latest-posts-list">
-      <% posts=collections.b.resources + collections.p.resources + collections["peace-corps"].resources %>
+      <% posts=collections.b.resources + collections.p.resources + collections["peace-corps"].resources + [collections.w.resources.first] %>
       <% posts.sort_by! { |post| post.date.to_date }.reverse! %>
       <% posts[0...9].each do |post| %>
         <li class="latest-posts-list__item">
