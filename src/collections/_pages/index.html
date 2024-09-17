@@ -34,22 +34,20 @@ layout: index
 
 <section class="card card--latest">
   <h2 class="card__title card__title--latest">Latest posts</h2>
-  <div class="card__content">
     <ul class="latest-posts-list">
       <% posts=collections.b.resources + collections.p.resources + collections["peace-corps"].resources %>
-        <% posts.sort_by! { |post| post.date.to_date }.reverse! %>
-          <% posts[0...10].each do |post| %>
-            <li class="latest-posts-list__item">
-              <h3 class="latest-posts-list__item-title">
-                <%= link_to post.data.title, post.relative_url, class: "latest-posts-list__item-title" %>
-              </h3>
-              <time class="latest-posts-list__date" datetime="<%= post.date %>">
-                <%= post.date.to_date %>
-              </time>
-            </li>
-            <% end %>
+      <% posts.sort_by! { |post| post.date.to_date }.reverse! %>
+      <% posts[0...9].each do |post| %>
+        <li class="latest-posts-list__item">
+          <h3 class="latest-posts-list__item-title">
+            <%= link_to post.data.title, post.relative_url, class: "latest-posts-list__item-title" %>
+          </h3>
+          <time class="latest-posts-list__date" datetime="<%= post.date %>">
+            <%= post.date.to_date %>
+          </time>
+        </li>
+      <% end %>
     </ul>
-  </div>
 </section>
 
 

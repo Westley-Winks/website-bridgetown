@@ -17,6 +17,12 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 
 ## 2024-09-16
 
+- Changed latest posts section to a flexbox so that it expands to fills the empty space
+- Added [weeknotes 2024W37](/w/2024W37/)
+- Updated recent links on home page
+
+## 2024-09-16
+
 - Changed basically everything!
   - Switched from Astro to Bridgetown
   - Massive facelift. Lots of bold colors and stark lines.
