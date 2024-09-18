@@ -29,3 +29,9 @@
 <link rel="stylesheet" href="<%= asset_path :css %>" />
 <script src="<%= asset_path :js %>" defer></script>
 <%= live_reload_dev_js %>
+
+<% unless Bridgetown.env.development? %>
+<!-- GoatCounter Analytics -->
+  <script data-goatcounter="https://wwinks.goatcounter.com/count"
+          async src="//gc.zgo.at/count.js"></script>
+<% end %>
