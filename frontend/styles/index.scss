@@ -433,12 +433,13 @@ article {
     text-decoration: underline;
   }
 
-  .article-footer {
+  .post-footer {
+    align-items: flex-end;
     display: flex;
     flex-flow: row wrap;
+    gap: var(--size-fluid-1);
     justify-content: space-between;
     margin-top: var(--size-fluid-2);
-    gap: var(--size-fluid-1);
   }
 
   .ai-badge {
@@ -496,14 +497,82 @@ article {
   }
 }
 
-.reply-button {
-  background: var(--orange-5);
+.post-engage {
+  background: var(--violet-4);
+  margin: var(--size-fluid-2) auto;
+  max-width: var(--size-content-3);
   text-align: center;
+
+  p {
+    margin: var(--size-fluid-1) auto;
+  }
+
+  &__button-container {
+    display: flex;
+    flex-flow: row wrap;
+    gap: var(--size-fluid-1);
+    justify-content: space-evenly;
+  }
+
+  &__reply-button {
+    background: var(--orange-4);
+    border: var(--border-size-2) solid;
+    box-shadow: var(--size-1) var(--size-1) var(--gray-12);
+    font-weight: var(--font-weight-5);
+    line-height: 36px;
+    min-width: var(--size-12);
+    padding: var(--border-size-3) var(--size-1);
+    text-align: center;
+    text-decoration: none;
+    vertical-align: middle;
+
+    &:hover,&:focus {
+      box-shadow: var(--size-2) var(--size-2) var(--gray-12);
+      transform: translate(var(--size-00), var(--size-00));
+
+      &:active {
+        transform: none;
+      }
+    }
+    &:active {
+      box-shadow: none;
+      transform: translate(var(--size-1), var(--size-1));
+    }
+  }
+
+  &__title {
+    background: var(--violet-2);
+  }
+}
+
+.btn-container {
+  background: var(--orange-4);
   border: var(--border-size-2) solid;
   box-shadow: var(--size-1) var(--size-1) var(--gray-12);
-  padding: var(--size-fluid-1) var(--size-fluid-2);
+  padding: var(--border-size-3) var(--size-1);
+  text-align: center;
 
-  &:hover,&:focus {
+  .kofi-button {
+    box-shadow: none;
+    height: 100%;
+    
+    .kofitext {
+      color: var(--gray-12) !important;
+      font-family: var(--font-geometric-humanist);
+      font-size: var(--font-size-1);
+
+      img.kofiimg {
+        height: 21px !important;
+        width: 31px !important;
+
+        &::after {
+          height: var(--size-px-9);
+        }
+      }
+    }
+  }
+
+  &:hover,&:focus-within {
     box-shadow: var(--size-2) var(--size-2) var(--gray-12);
     transform: translate(var(--size-00), var(--size-00));
 
