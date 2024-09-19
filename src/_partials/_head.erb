@@ -5,13 +5,17 @@
 <meta name="generator" content="Bridgetown" />
 
 <% resource_title = strip_html(strip_newlines(title)) %>
-<title>
-  <% if resource_title != "Westley Winks" %>
-    <%= resource_title %> | <%= metadata.title %>
-  <% else %>
+<% if resource_title != "Westley Winks" %>
+  <title>
+    <%= metadata.title %> :: <%= resource_title %>
+  </title>
+  <meta property="og:title" content="<%= metadata.title %> :: <%= resource_title %>" />
+<% else %>
+  <title>
     <%= metadata.title %>
-  <% end %>
-</title>
+  </title>
+  <meta property="og:title" content="<%= metadata.title %>" />
+<% end %>
 
 <% if resource.data.description %>
   <meta name="description" content="<%= resource.data.description %>" />
@@ -24,7 +28,6 @@
 <!-- Open Graph / Facebook -->
 <meta property="og:type" content="website" />
 <meta property="og:url" content=<%= "https://wwinks.com" + resource.relative_url %> />
-<meta property="og:title" content="<%= title %>" />
 
 <link rel="stylesheet" href="<%= asset_path :css %>" />
 <script src="<%= asset_path :js %>" defer></script>
