@@ -43,7 +43,7 @@ a {
 :is(:not(pre) > code) {
   background: var(--gray-2);
   padding: var(--border-size-2) var(--border-size-1);
-  word-break: break-all;
+  white-space: normal;
 }
 
 h1,
@@ -230,7 +230,7 @@ main.index {
   &__item-title {
     text-align: center;
     color: var(--gray-12);
-    font-size: var(--font-size-fluid-1);
+    font-size: var(--font-size-4);
     margin: var(--size-fluid-1) auto;
   }
 }
@@ -250,6 +250,7 @@ main.index {
   color: var(--gray-12);
   display: flex;
   flex-flow: row wrap;
+  gap: var(--size-fluid-1);
   justify-content: space-between;
   margin: var(--size-fluid-1) 0;
   padding: var(--size-fluid-1) var(--size-fluid-2);
@@ -258,7 +259,7 @@ main.index {
     color: inherit;
     font-size: var(--font-size-fluid-3);
     font-weight: bold;
-    line-height: 2rem;
+    line-height: var(--font-lineheight-0);
     margin: 0;
     text-decoration: none;
   }
@@ -268,7 +269,7 @@ main.index {
     border: var(--border-size-1) solid;
     box-shadow: var(--size-1) var(--size-1) var(--gray-12);
     color: inherit;
-    font-size: 1.2rem;
+    font-size: var(--font-size-fluid-1);
     padding: var(--size-1) var(--size-2);
     text-decoration: none;
 
