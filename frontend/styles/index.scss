@@ -443,22 +443,6 @@ article {
     margin-top: var(--size-fluid-2);
   }
 
-  .ai-badge {
-    &:hover,&:focus {
-      border-radius: var(--radius-2);
-      box-shadow: var(--size-2) var(--size-2) var(--gray-12);
-      transform: translate(var(--size-00), var(--size-00));
-
-        &:active {
-          transform: none;
-        }
-      }
-      &:active {
-        box-shadow: none;
-        transform: translate(var(--size-1), var(--size-1));
-    }
-  }
-
   .footnotes {
     border: var(--border-size-2) solid var(--gray-12);
     margin-top: var(--size-fluid-2);
@@ -585,4 +569,35 @@ article {
     box-shadow: none;
     transform: translate(var(--size-1), var(--size-1));
   }
+}
+
+.badge {
+  &:hover,&:focus {
+    border-radius: var(--radius-2);
+    box-shadow: var(--size-2) var(--size-2) var(--gray-12);
+    transform: translate(var(--size-00), var(--size-00));
+
+      &:active {
+        transform: none;
+      }
+    }
+    &:active {
+      box-shadow: none;
+      transform: translate(var(--size-1), var(--size-1));
+  }
+}
+
+.badge-container {
+  display: flex;
+  flex-flow: row wrap;
+  gap: var(--size-1);
+  justify-content: space-around;
+  margin: auto 0;
+}
+
+.card--colophon {
+  display: flex;
+  flex-flow: column nowrap;
+  gap: var(--size-2);
+  justify-content: space-between;
 }

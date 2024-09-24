@@ -70,40 +70,65 @@ layout: index
   <h2 class="card__title card__title--about">Who am I?</h2>
   <div class="card__content">
     <p>
-      My name is Westley Winks. I try to live my life with integrity by
-      living according to my core values:
+      My name is Westley Winks. I try to live my life with integrity by committing to these core values, even when it's uncomfortable:
     </p>
     <ul>
       <li>
-        <strong>Learning.</strong> I live for the pursuit of learning and it
-        gives my life meaning and purpose. I stay curious and am always looking
-        for new information and skills. For me, learning looks like <%= link_to 'reading books', 'collections/_pages/b.md' %>, <%= link_to 'coding', 'https://github.com/Westley-Winks' %>, solving
-        puzzles, reading blog posts, <%= link_to 'writing', 'collections/_pages/p.md' %>, and
-        trying new things. One of my weaknesses is learning <em>for the sake of learning</em> and staying on the
-        theoretical side of things instead of applying them.
+        <strong>Learning humbly.</strong> Pursuing and practicing new skills and knowledge that serve my goals, my interests, and other people. Doing it humbly means embracing a beginner's mindset, admitting when I am wrong or don't know, and understanding that I can always learn something from others.
       </li>
       <li>
-        <strong>Service to others.</strong> One of my roles in this life is to
-        compassionately serve others, supporting them and nurturing their growth.
-        I enjoy being known as &quot;the guy&quot; who people call, knowing that
-        I will put all my effort into helping them. Serving others looks like
-        <%= link_to 'volunteering', 'collections/_pages/peace-corps.md' %>, choosing the "support role"
-        in any game I play, and <%= link_to 'writing', 'collections/_pages/p.md' %>.
-        
+        <strong>Serving compassionately and reliably.</strong> Helping others, supporting them and nurturing their growth when and how <em>they</em> need it. Doing it compassionately means leading with empathy, taking care of myself, and remaining other-focused rather than transactional. Being reliable is continually building trust with myself and others that I will do what I say I'm going to do.
+      </li>
+      <li>
+        <strong>Connecting authentically.</strong> Investing in meaningful relationships while participating in and adding value to important things that are larger than myself. Being authentic means choosing truth over performance, not sacrificing my values or identity to fit in, and being my true self in any engagement with myself or others.
       </li>
     </ul>
   </div>
 </section>
 
 <section class="card card--colophon">
-  <h2 class="card__title card__title--colophon">Colophon</h2>
-  <div class="card__content">
-    <%= markdownify do %>
-      - [Alessandro Muraro](https://alexmuraro.me/) - design inspiration
-      - [Bridgetown](https://bridgetown.com) - static site generator
-      - [SCSS](https://sass-lang.com/) - styling
-      - [Open Props](https://open-props.style/) - CSS variables
-      - [Netlify](https://www.netlify.com/) - hosting
-      <% end %>
+  <div>
+    <h2 class="card__title card__title--colophon">Colophon</h2>
+      <%= markdownify do %>
+        - [Alessandro Muraro](https://alexmuraro.me/) - design inspiration
+        - [Bridgetown](https://bridgetown.com) - static site generator
+        - [SCSS](https://sass-lang.com/) - styling
+        - [Open Props](https://open-props.style/) - CSS variables
+        - [Netlify](https://www.netlify.com/) - hosting
+        <% end %>
+  </div>
+  <div class="badge-container">
+    <a href="https://notbyai.fyi" target="_blank" class=""
+      ><img class="badge"
+        width="88" 
+        height="31" 
+        src="/assets/not-by-ai.svg"
+        alt="Written by Human, Not by AI"
+      />
+    </a>
+    <a href="https://32bit.cafe/" target="_blank" class=""
+      ><img class="badge"
+        width="88" 
+        height="31" 
+        src="/assets/32bit-cafe-badge.png"
+        alt="32-Bit Cafe Badge"
+      />
+    </a>
+    <a href="https://ww.omg.lol/" target="_blank" class=""
+      ><img class="badge"
+        width="88" 
+        height="31" 
+        src="/assets/omglol-badge.png"
+        alt="omg.lol"
+      />
+    </a>
+    <a href="https://en.pronouns.page/he" target="_blank" class=""
+      ><img class="badge"
+        width="88" 
+        height="31" 
+        src="/assets/pronouns-badge.png"
+        alt="he/him"
+      />
+    </a>
   </div>
 </section>
