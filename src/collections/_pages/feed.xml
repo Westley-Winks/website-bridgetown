@@ -1,0 +1,37 @@
+---
+layout: false
+template_engine: erb
+---
+
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <generator uri="https://bridgetownrb.com/" version="<%= Bridgetown::VERSION %>">Bridgetown</generator>
+   <link href="<%= page.absolute_url %>" rel="self" type="application/atom+xml" />
+   <link href="https://wwinks.com/" rel="alternate" />
+   <updated><%= site.time.to_datetime.rfc3339 %></updated>
+   <id><%= page.absolute_url %></id>
+
+   <title type="text">Westley Winks</title>
+   <author>
+     <name>Westley Winks</name>
+     <email>websitecontact.hush341@passmail.net</email>
+     <uri>https://wwinks.com/</uri>
+   </author>
+
+  <% posts=collections.b.resources + collections.p.resources + collections["peace-corps"].resources + collections.w.resources[0..1] %>
+  <% posts.sort_by! { |post| post.date.to_date }.reverse! %>
+  <% posts.each do |post| %>
+   <entry>
+     <title><%= post.data.title %></title>
+     <link href="<%= post.absolute_url %>"/>
+     <id><%= post.id %></id>
+     <updated><%= post.data.lastmod.to_datetime.rfc3339 %></updated>
+     <summary><%= post.data.summary || post.data.description %></summary>
+     <content type="html"><%= post.content.strip %></content>
+    <% post.data.tags.each do |tag| %>
+      <category term="<%= tag %>" />
+    <% end %>
+   </entry>
+ <% end %>
+
+</feed>

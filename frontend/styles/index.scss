@@ -601,3 +601,25 @@ article {
   gap: var(--size-2);
   justify-content: space-between;
 }
+
+.icon-tabler-rss {
+  border: var(--border-size-2) solid var(--gray-12);
+  box-shadow: var(--border-size-1) var(--border-size-1) var(--gray-10);
+  display: block;
+  margin: 0 auto;
+  stroke: var(--gray-12);
+
+  &:hover,&:focus {
+    background: var(--blue-4);
+    box-shadow: var(--size-1) var(--size-1) var(--gray-12);
+    transform: translate(calc(var(--border-size-1) * -1), calc(var(--border-size-1) * -1));
+
+    &:active {
+      transform: none;
+    }
+  }
+  &:active {
+    box-shadow: none;
+    transform: translate(var(--size-1), var(--size-1));
+  }
+}

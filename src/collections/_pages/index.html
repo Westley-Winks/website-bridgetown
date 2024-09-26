@@ -22,21 +22,31 @@ layout: index
 </section>
 
 <section class="card card--latest">
-  <h2 class="card__title card__title--latest">Latest posts</h2>
-    <ul class="latest-posts-list">
-      <% posts=collections.b.resources + collections.p.resources + collections["peace-corps"].resources + [collections.w.resources.first] %>
-      <% posts.sort_by! { |post| post.date.to_date }.reverse! %>
-      <% posts[0...9].each do |post| %>
-        <li class="latest-posts-list__item">
-          <h3 class="latest-posts-list__item-title">
-            <%= link_to post.data.title, post.relative_url, class: "latest-posts-list__item-title" %>
-          </h3>
-          <time class="latest-posts-list__date" datetime="<%= post.date %>">
-            <%= post.date.to_date %>
-          </time>
-        </li>
-      <% end %>
-    </ul>
+  <h2 class="card__title card__title--latest">
+    Latest posts
+</h2>
+  <a href="/feed.xml" class="icon-tabler-rss">
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
+      <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+      <path d="M5 19m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0" />
+      <path d="M4 4a16 16 0 0 1 16 16" />
+      <path d="M4 11a9 9 0 0 1 9 9" />
+    </svg>
+  </a>
+  <ul class="latest-posts-list">
+    <% posts=collections.b.resources + collections.p.resources + collections["peace-corps"].resources + [collections.w.resources.first] %>
+    <% posts.sort_by! { |post| post.date.to_date }.reverse! %>
+    <% posts[0...9].each do |post| %>
+      <li class="latest-posts-list__item">
+        <h3 class="latest-posts-list__item-title">
+          <%= link_to post.data.title, post.relative_url, class: "latest-posts-list__item-title" %>
+        </h3>
+        <time class="latest-posts-list__date" datetime="<%= post.date %>">
+          <%= post.date.to_date %>
+        </time>
+      </li>
+    <% end %>
+  </ul>
   <script type='text/javascript' src='https://storage.ko-fi.com/cdn/widget/Widget_2.js'></script><script type='text/javascript'>kofiwidget2.init('Buy me a coffee', 'var(--orange-4)', 'G2G710UKZL');kofiwidget2.draw();</script>
 </section>
 
@@ -128,6 +138,14 @@ layout: index
         height="31" 
         src="/assets/pronouns-badge.png"
         alt="he/him"
+      />
+    </a>
+    <a href="/feed.xml" class=""
+      ><img class="badge"
+        width="88" 
+        height="31" 
+        src="/assets/feed-badge.gif"
+        alt="Subscribe to RSS feed"
       />
     </a>
   </div>
