@@ -15,6 +15,10 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 - `Removed` for now removed features or content.
 - `Fixed` for any typos or bug fixes.
 
+## 2024-09-29
+
+- Added [weeknotes 2024W39](/w/2024W39/)
+
 ## 2024-09-26
 
 - Added [RSS/Atom feed](/feed.xml) and accompanying button and badge

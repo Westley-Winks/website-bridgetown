@@ -7,15 +7,18 @@ layout: index
   <h2 class="card__title">Recent links</h2>
   <div class="card__content">
     <%= markdownify do %>
+      - [Metric-Less Success](https://moretothat.com/metric-less-success/) by Lawrence Yeo at More to That. Important things in life that are the *real* goalposts usually can't be measured by an external number. Treating people with compassion can't be measured. Living with integrity can't be put into a number.
+      - [Between queer and LGBTQIA+](https://en.pronouns.page/blog/queer-lgbtq) by Andrea Vos at Pronouns.page. Queer means so much more than "not heterosexual and not cisgender." It's an anti-assimilation, intersectional, patriarchal subversion movement.
+      - [Social rules](https://www.recurse.com/social-rules) by Recurse Center. Social rules that "create a friendly, intellectual environment." I wished there were framed as things you *should do* rather than what not to do but useful nonetheless.
+      	> 1. No well-actually's
+      	> 2. No feigned surprise
+      	> 3. No backseat driving
+      	> 4. No subtle -isms
+      - [Pause at the top of the slide](https://anniemueller.com/posts/pause-at-the-top-of-the-slide) by Annie Mueller. Stop and start difficult things when they are not difficult. There is less resistance to starting again and you immediately build momentum.
       - [The skill of allyship](https://recipesforwellbeing.substack.com/p/the-skill-of-allyship) by Recipes For Wellbeing.
       	> Allyship is not about saviourism or paternalism. Rather, it’s about using your privilege to open doors, to challenge discriminatory policies and practices, and to advocate for systemic change. It’s about being willing to **take risks, face backlash, and leverage your social and political capital for justice.**
-      - [Know how you'll end your presentation](https://gilest.org/end.html) by Giles Turnbull. Don't fizzle out of a presentation with "and, um, yeah that's pretty much it." Let your audience know, clearly, when your presentation has ended. I just finished reading Turnbull's book and I've been enjoying reading around his website for more communication nuggets.
       - [Modern apologies](https://seths.blog/2024/09/modern-apologies/) by Seth Godin.
       	> “Sorry” doesn’t have to be an admission of guilt or acceptance of fault. It could simply be the kind way one human acknowledges to another human that things aren’t ideal right now.
-      - [What Came First?](https://artsandculture.google.com/experiment/what-came-first/ZQGBUPErEE3bVg) by Google Arts & Culture. Fun game which made it very clear that I don't know very much about history or culture. It gives you two cultural artifacts and you decide which came first. After you choose, you get a little snippet of info for each one which is a nice way to learn.
-      - [All on the table](https://everythingchanges.us/blog/all-on-the-table/) by Mandy Brown at everything changes. I love everything Brown writes and this was no exception.
-      	> "It is a fundamentally different experience to negotiate an exchange of funds with a living, breathing, person versus with a mindless, unconscious organization. It’s more vulnerable and personal, and there’s more on the table than just cash."
-      - [Your brain is biased by default. Here's how to reset it. \| David Eagleman](https://www.youtube.com/watch?v=6L9UHONpSfM) by Big Think. People don't experience reality in the same way. We can expand our worldviews and internal models by traveling and interacting with others. Understanding our biases towards people in out-groups is a good way to counteract them.
       <% end %>
   </div>
 
@@ -36,7 +39,7 @@ layout: index
   <ul class="latest-posts-list">
     <% posts=collections.b.resources + collections.p.resources + collections["peace-corps"].resources + [collections.w.resources.first] %>
     <% posts.sort_by! { |post| post.date.to_date }.reverse! %>
-    <% posts[0...9].each do |post| %>
+    <% posts[0...8].each do |post| %>
       <li class="latest-posts-list__item">
         <h3 class="latest-posts-list__item-title">
           <%= link_to post.data.title, post.relative_url, class: "latest-posts-list__item-title" %>
