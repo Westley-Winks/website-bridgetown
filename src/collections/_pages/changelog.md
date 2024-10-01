@@ -15,6 +15,10 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 - `Removed` for now removed features or content.
 - `Fixed` for any typos or bug fixes.
 
+## 2024-10-01
+
+- Added book notes for [Culture Matters](/b/culture_matters/) by Peace Corps
+
 ## 2024-09-29
 
 - Added [weeknotes 2024W39](/w/2024W39/)
