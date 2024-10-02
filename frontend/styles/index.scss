@@ -244,7 +244,7 @@ main.index {
 
 .navbar {
   align-items: center;
-  background: var(--purple-6);
+  background: var(--purple-4);
   border: var(--border-size-2) solid;
   box-shadow: var(--size-1) var(--size-1) var(--gray-12);
   color: var(--gray-12);
@@ -265,8 +265,9 @@ main.index {
   }
 
   &__link {
-    background: var(--lime-4);
+    background: var(--camo-2);
     border: var(--border-size-1) solid;
+    border-radius: var(--radius-3);
     box-shadow: var(--size-1) var(--size-1) var(--gray-12);
     color: inherit;
     font-size: var(--font-size-fluid-1);
