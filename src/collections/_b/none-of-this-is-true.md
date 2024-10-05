@@ -34,7 +34,7 @@ The author's writing style is very easy to read (besides a few British reference
 
 > Then she tries on one of the dresses that Alix chose for her, soft floral jersey with a V-neck, fitted to the knee, and she checks the price tag and sees that it is £49.99 and that she can afford it and then feels a shiver of excitement because the dress is exquisite and because it makes her look pretty and shapely and young and because it is not made of hard-wearing denim but of a soft, silky fabric that feels beautiful to touch, and she takes it off and then tries on another and another and another and all of them make her look like a woman she has never met before and would like to know better, and she takes all three dresses, both pieces of knitwear, and the red cotton blazer to the till and watches in breathless awe as all six items are rung through by one assistant while the other assistant wraps them in tissue and the total is £398.87 and that is more than Josie has ever spent in one go on anything ever in her life but the atmosphere feels celebratory, somehow, as if Alix and the sales assistants are all cheering her on, as if the purchase is an achievement of some kind, a reward, an award, a prize for good behavior
 
-This was also the first time I've ever seen "I'd've, or really any word with two apostrophes, written out:
+This was also the first time I've ever seen "I'd've," or really any word with two apostrophes, written out:
 
 > "Oh, lucky you. I’d’ve loved a sister."
 
