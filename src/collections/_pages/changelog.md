@@ -15,6 +15,10 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 - `Removed` for now removed features or content.
 - `Fixed` for any typos or bug fixes.
 
+## 2024-10-06
+
+- Added [weeknotes 2024W40](/w/2024W40/)
+
 ## 2024-10-05
 
 - Added [Lure, Résumé, Detail: The 3-Tier Job Search Cake](/p/job-search-cake/)
