@@ -1,4 +1,5 @@
 @use "cv";
+@use "article-toc";
 @import "variables";
 
 html {
@@ -409,46 +410,6 @@ main.index {
     max-width: var(--size-content-3);
     justify-content: left;
     margin: var(--size-fluid-2) auto;
-  }
-
-}
-
-article {
-  max-width: var(--size-content-3);
-  margin: var(--size-fluid-1) auto;
-  background: var(--red-3);
-  border: var(--border-size-2) solid var(--gray-12);
-  color: var(--gray-12);
-  padding: var(--size-fluid-1);
-  box-shadow:
-    var(--border-size-1) var(--border-size-1) var(--cyan-1),
-    var(--border-size-2) var(--border-size-2) var(--yellow-4),
-    var(--border-size-3) var(--border-size-3) var(--green-4),
-    var(--border-size-4) var(--border-size-4) var(--orange-4);
-
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6 {
-    text-decoration: underline;
-  }
-
-  .post-footer {
-    align-items: flex-end;
-    display: flex;
-    flex-flow: row wrap;
-    gap: var(--size-fluid-1);
-    justify-content: space-between;
-    margin-top: var(--size-fluid-2);
-  }
-
-  .footnotes {
-    border: var(--border-size-2) solid var(--gray-12);
-    margin-top: var(--size-fluid-2);
-    background: var(--red-2);
-    box-shadow: var(--size-1) var(--size-1) var(--gray-12);
   }
 }
 

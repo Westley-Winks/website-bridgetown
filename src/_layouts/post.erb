@@ -2,21 +2,23 @@
 layout: default
 ---
 
-<article>
-  <%= yield %>
-  <section class="post-footer">
-    <div>
-      <p>Created: <time datetime="<%= resource.data.date %>"><%=resource.data.date.to_date %></time></p>
-      <p>Last modified: <time datetime="<%= resource.data.lastmod %>"><%=resource.data.lastmod.to_date %></time></p>
-    </div>
-    <a href="https://notbyai.fyi" target="_blank" class=""
-      ><img class="badge"
-        src="/assets/not-by-ai.svg"
-        alt="Written by Human, Not by AI"
-      /></a
-    >
-  </section>
-</article>
+<div class="article-toc-container">
+  <article>
+    <%= yield %>
+    <section class="post-footer">
+      <div>
+        <p>Created: <time datetime="<%= resource.data.date %>"><%=resource.data.date.to_date %></time></p>
+        <p>Last modified: <time datetime="<%= resource.data.lastmod %>"><%=resource.data.lastmod.to_date %></time></p>
+      </div>
+      <a href="https://notbyai.fyi" target="_blank" class=""
+        ><img class="badge"
+          src="/assets/not-by-ai.svg"
+          alt="Written by Human, Not by AI"
+        /></a
+      >
+    </section>
+  </article>
+</div>
 
 <section class="card post-engage">
   <h2 class="card__title post-engage__title">Like my writing?</h2>

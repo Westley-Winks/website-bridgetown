@@ -1,0 +1,171 @@
+.article-toc-container {
+  display: flex;
+  flex-flow: row nowrap;
+  gap: var(--size-fluid-2);
+  justify-content: center;
+
+  @media (max-width: 768px) {
+    flex-flow: column nowrap;
+    align-items: center;
+  }
+
+  nav.toc {
+    background: var(--green-4);
+    height: min-content;
+    max-height: calc(100vh - var(--size-10));
+    max-width: var(--size-content-2);
+    min-width: var(--size-content-1);
+    overflow-y: auto;
+    position: sticky;
+    top: var(--size-5);
+
+    &:hover,
+    &:focus-within {
+      transform: translate(var(--size-00), var(--size-00));
+      box-shadow:
+        var(--border-size-1) var(--border-size-1) var(--gray-12),
+        var(--border-size-2) var(--border-size-2) var(--violet-4),
+        var(--border-size-3) var(--border-size-3) var(--green-4),
+        var(--border-size-4) var(--border-size-4) var(--orange-4);
+    }
+
+    @media (max-width: 768px) {
+      display: none;
+      height: min-content;
+      max-height: 40vh;
+      background: var(--green-2);
+      box-shadow: var(--size-2) var(--size-2) var(--gray-12);
+      &:hover,
+      &:focus-within {
+        transform: none;
+        box-shadow: var(--size-2) var(--size-2) var(--gray-12);
+      }
+    }
+
+    #markdown-toc {
+      list-style: none;
+      margin-left: 10px;
+      margin: 0;
+      padding: 0;
+
+      &:first-child {
+        font-weight: bold;
+      }
+
+      a {
+        background: none;
+        border: none;
+        font-size: var(--font-size-fluid-0);
+      }
+
+      ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+      }
+
+      li {
+        border-left: var(--border-size-2) solid var(--gray-12);
+        color: var(--gray-12);
+        font-weight: normal;
+        line-height: 20px;
+        margin: 0;
+        padding: 0 7px;
+      }
+
+      li:last-child {
+        border-left: none;
+      }
+
+      li:before {
+        border-bottom: var(--border-size-2) solid var(--gray-12);
+        color: white;
+        content: "";
+        display: inline-block;
+        height: 1em;
+        left: -7px;
+        position: relative;
+        top: -0.3em;
+        width: 12px;
+      }
+
+      li:last-child:before {
+        border-left: var(--border-size-2) solid var(--gray-12);
+      }
+    }
+  }
+
+  article {
+    background: var(--red-3);
+    border: var(--border-size-2) solid var(--gray-12);
+    box-shadow:
+      var(--border-size-1) var(--border-size-1) var(--gray-12),
+      var(--border-size-2) var(--border-size-2) var(--violet-4),
+      var(--border-size-3) var(--border-size-3) var(--green-4),
+      var(--border-size-4) var(--border-size-4) var(--orange-4);
+    color: var(--gray-12);
+    max-width: var(--size-content-3);
+    padding: var(--size-fluid-1);
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      text-decoration: underline;
+    }
+
+    .post-footer {
+      align-items: flex-end;
+      display: flex;
+      flex-flow: row wrap;
+      gap: var(--size-fluid-1);
+      justify-content: space-between;
+      margin-top: var(--size-fluid-2);
+    }
+
+    .footnotes {
+      background: var(--red-2);
+      border: var(--border-size-2) solid var(--gray-12);
+      box-shadow: var(--size-1) var(--size-1) var(--gray-12);
+      margin-top: var(--size-fluid-2);
+    }
+  }
+
+  #menu-button {
+    background: var(--green-2);
+    display: none;
+    border: var(--border-size-1) solid;
+    box-shadow: var(--size-1) var(--size-1) var(--gray-12);
+
+    &:hover,
+    &:focus-within {
+      box-shadow: var(--size-2) var(--size-2) var(--gray-12);
+      transform: translate(var(--size-00), var(--size-00));
+    }
+
+    @media (max-width: 768px) {
+      border-radius: var(--radius-3);
+      border: var(--border-size-2) solid;
+      display: block;
+      margin: var(--size-1);
+      padding: var(--size-2) var(--size-4);
+
+    }
+  }
+
+  .toc-container {
+    margin: 0 var(--size-fluid-2);
+    position: sticky;
+    top: var(--size-2);
+
+    @media (max-width: 768px) {
+      align-self: start;
+    }
+  }
+
+  [aria-expanded="true"]+.toc {
+    display: block;
+  }
+}
