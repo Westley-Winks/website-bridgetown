@@ -51,7 +51,9 @@ def convert_wikilinks(bt_note_path)
   bt_note_content.gsub!(REGEX_IMAGES) do |match|
     image = Regexp.last_match(1)
     alt_text = Regexp.last_match(2) || image
-    say_status "manual copy", image, :red
+    unless $available_images.include? image
+      say_status "manual copy", image, :red
+    end
     "![#{alt_text}](/assets/#{image})"
   end
 
@@ -60,13 +62,11 @@ def convert_wikilinks(bt_note_path)
   File.write bt_note_path, bt_note_content
 end
 
-def remove_kindle_highlights(note_content)
-end
-
 def self.source_root
   File.dirname(__FILE__)
 end
 
+$available_images = Dir["src/**/*.{webp,jpeg,jpg,png}"].map{ |image| File.basename image }
 $path_map = copy_notes
 $path_map.each_value do |bt_note_path|
   convert_wikilinks("src/#{bt_note_path}")
