@@ -13,7 +13,6 @@ pre.highlight {
   background-color: var(--red-1);
   padding: 16px;
   overflow: scroll;
-  max-width: unset;
 }
 
 .highlight .hll { background-color: #ffffcc }

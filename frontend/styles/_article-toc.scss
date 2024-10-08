@@ -5,8 +5,7 @@
   justify-content: center;
 
   @media (max-width: 768px) {
-    flex-flow: column nowrap;
-    align-items: center;
+    display: block;
   }
 
   nav.toc {
@@ -107,6 +106,10 @@
     max-width: var(--size-content-3);
     padding: var(--size-fluid-1);
 
+    @media (max-width: 768px) {
+      margin: 0 auto;
+    }
+
     h1,
     h2,
     h3,
@@ -156,12 +159,11 @@
   }
 
   .toc-container {
-    margin: 0 var(--size-fluid-2);
     position: sticky;
     top: var(--size-2);
 
-    @media (max-width: 768px) {
-      align-self: start;
+    @media(max-width: 768px) {
+      margin: 0 var(--size-fluid-2);
     }
   }
 

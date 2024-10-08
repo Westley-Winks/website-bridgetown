@@ -15,6 +15,20 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 - `Removed` for now removed features or content.
 - `Fixed` for any typos or bug fixes.
 
+## 2024-10-08
+
+- Fixed syntax highlighting
+- Restyle home page
+  - "Elsewhere" and "Tags" cards now stack vertically on medium screens
+  - Refactored SCSS files and put home page SCSS into its own file
+
+## 2024-10-07
+
+- Posts with `toc: true` in the frontmatter now displays a table of contents
+  - TOC sticks next to article while scrolling
+  - Overflow scroll works
+  - Is hidden under a button on small and medium screens
+
 ## 2024-10-06
 
 - Added [weeknotes 2024W40](/w/2024W40/)
