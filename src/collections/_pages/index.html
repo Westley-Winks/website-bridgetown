@@ -3,28 +3,8 @@ title: Westley Winks
 layout: index
 ---
 
-<section class="card card--recent-links">
-  <h2 class="card__title">Recent links</h2>
-  <div class="card__content">
-    <%= markdownify do %>
-      - [anh's home page.](https://anhvn.com/) Beautifully and expertly crafted and kind of creepy. Incredible.
-      - [What is it about people who write Weeknotes?](https://www.twelvety.net/2024/10/what-is-it-about-people-who-write-weeknotes) by Phil Nunnally. Nunnally perfectly put into words how reading other weeknotes makes me feel.
-      	> Weeknotes put us all on an equal footing. Everyone just had a week. What you noticed and how you spent the time and energy is what makes yours different.
-      - [Color scheme toggle](https://calayucu.com/light-mode) by [@miuku.](https://deadinsi.de/@miyuko/113216850891933305) Just plain ol' fun.
-      - [Being Raised by the Internet by Jimmy Miller.](https://jimmyhmiller.github.io/raised) Openly sharing knowledge and resources is a wonderful thing.
-      - [How I Experience the Web Today](https://how-i-experience-web-today.com/) by Guangyi Li. A satirical look at modern websites and their god awful popups, modals, ads, and paywalls.
-      - [QR Code Generator](https://qrframe.kylezhe.ng/) by Kyle Zheng and [the accompanying blog post.](https://kylezhe.ng/posts/crafting_qr_codes) Really cool looking QR codes and a deep dive into how they work.
-      - [Stay in the gap](https://everythingchanges.us/blog/stay-in-the-gap/) by Mandy Brown at everything changes. There will always be a gap between what you see as excellent and your abilities. This isn't a gap to be crossed but one to live in.
-      - [Metric-Less Success](https://moretothat.com/metric-less-success/) by Lawrence Yeo at More to That. Important things in life that are the *real* goalposts usually can't be measured by an external number. Treating people with compassion can't be measured. Living with integrity can't be put into a number.
-      - [Between queer and LGBTQIA+](https://en.pronouns.page/blog/queer-lgbtq) by Andrea Vos at Pronouns.page. Queer means so much more than "not heterosexual and not cisgender." It's an anti-assimilation, intersectional, patriarchal subversion movement.
-      - [Pause at the top of the slide](https://anniemueller.com/posts/pause-at-the-top-of-the-slide) by Annie Mueller. Stop and start difficult things when they are not difficult. There is less resistance to starting again and you immediately build momentum.
-      <% end %>
-  </div>
-
-</section>
-
-<section class="card card--latest">
-  <h2 class="card__title card__title--latest">
+<section class="card latest">
+  <h2 class="card__title">
     Latest posts
 </h2>
   <a href="/feed.xml" class="icon-tabler-rss">
@@ -52,9 +32,27 @@ layout: index
   <script type='text/javascript' src='https://storage.ko-fi.com/cdn/widget/Widget_2.js'></script><script type='text/javascript'>kofiwidget2.init('Buy me a coffee', 'var(--orange-4)', 'G2G710UKZL');kofiwidget2.draw();</script>
 </section>
 
+<section class="card recent-links">
+  <h2 class="card__title">Recent links</h2>
+  <div class="card__content">
+    <%= markdownify do %>
+      - [anh's home page.](https://anhvn.com/) Beautifully and expertly crafted and kind of creepy. Incredible.
+      - [What is it about people who write Weeknotes?](https://www.twelvety.net/2024/10/what-is-it-about-people-who-write-weeknotes) by Phil Nunnally. Nunnally perfectly put into words how reading other weeknotes makes me feel.
+      	> Weeknotes put us all on an equal footing. Everyone just had a week. What you noticed and how you spent the time and energy is what makes yours different.
+      - [Color scheme toggle](https://calayucu.com/light-mode) by [@miuku.](https://deadinsi.de/@miyuko/113216850891933305) Just plain ol' fun.
+      - [Being Raised by the Internet by Jimmy Miller.](https://jimmyhmiller.github.io/raised) Openly sharing knowledge and resources is a wonderful thing.
+      - [How I Experience the Web Today](https://how-i-experience-web-today.com/) by Guangyi Li. A satirical look at modern websites and their god awful popups, modals, ads, and paywalls.
+      - [QR Code Generator](https://qrframe.kylezhe.ng/) by Kyle Zheng and [the accompanying blog post.](https://kylezhe.ng/posts/crafting_qr_codes) Really cool looking QR codes and a deep dive into how they work.
+      - [Stay in the gap](https://everythingchanges.us/blog/stay-in-the-gap/) by Mandy Brown at everything changes. There will always be a gap between what you see as excellent and your abilities. This isn't a gap to be crossed but one to live in.
+      - [Metric-Less Success](https://moretothat.com/metric-less-success/) by Lawrence Yeo at More to That. Important things in life that are the *real* goalposts usually can't be measured by an external number. Treating people with compassion can't be measured. Living with integrity can't be put into a number.
+      - [Between queer and LGBTQIA+](https://en.pronouns.page/blog/queer-lgbtq) by Andrea Vos at Pronouns.page. Queer means so much more than "not heterosexual and not cisgender." It's an anti-assimilation, intersectional, patriarchal subversion movement.
+      - [Pause at the top of the slide](https://anniemueller.com/posts/pause-at-the-top-of-the-slide) by Annie Mueller. Stop and start difficult things when they are not difficult. There is less resistance to starting again and you immediately build momentum.
+      <% end %>
+  </div>
+</section>
 
-<section id="contact" class="card card--elsewhere">
-  <h2 class="card__title card__title--elsewhere">Elsewhere</h2>
+<section id="contact" class="card elsewhere">
+  <h2 class="card__title">Elsewhere</h2>
   <div class="card__content">
     <div class="tag-container">
       <a href="mailto://websitecontact.hush341@passmail.net" target="_blank" class="tag-container__tag tag-container__tag--social">Email me</a>
@@ -68,8 +66,8 @@ layout: index
   </div>
 </section>
 
-<section class="card card--tags">
-  <h2 class="card__title card__title--tags">Browse tags</h2>
+<section class="card tags">
+  <h2 class="card__title">Browse tags</h2>
   <div class="card__content">
     <div class="tag-container">
       <% site.tags.keys.each do |tag| %>
@@ -78,8 +76,8 @@ layout: index
     </div>
 </section>
 
-<section class="card card--about">
-  <h2 class="card__title card__title--about">Who am I?</h2>
+<section class="card about">
+  <h2 class="card__title">Who am I?</h2>
   <div class="card__content">
     <p>
       My name is Westley Winks. I try to live my life with integrity by committing to these core values, even when it's uncomfortable:
@@ -98,9 +96,9 @@ layout: index
   </div>
 </section>
 
-<section class="card card--colophon">
+<section class="card colophon">
   <div>
-    <h2 class="card__title card__title--colophon">Colophon</h2>
+    <h2 class="card__title">Colophon</h2>
       <%= markdownify do %>
         - [Alessandro Muraro](https://alexmuraro.me/) - design inspiration
         - [Bridgetown](https://bridgetown.com) - static site generator

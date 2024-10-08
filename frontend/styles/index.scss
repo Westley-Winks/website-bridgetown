@@ -1,5 +1,6 @@
 @use "cv";
 @use "article-toc";
+@use "home";
 @import "variables";
 
 html {
@@ -90,20 +91,6 @@ main.post {
   margin: 0 auto;
 }
 
-main.index {
-  display: grid;
-  gap: var(--size-fluid-2);
-  grid-template-columns: 1fr 2fr 1fr;
-  justify-content: start;
-  margin: 0 auto;
-  margin-bottom: var(--size-fluid-1);
-  max-width: 1920px;
-
-  @media (width < 768px) {
-    grid-template-columns: 1fr;
-  }
-}
-
 .card {
   background: var(--pink-4);
   border: var(--border-size-2) solid var(--gray-12);
@@ -121,51 +108,13 @@ main.index {
     grid-row: auto;
   }
 
-  &--about {
-    background: var(--red-4);
-    grid-column: span 2;
-  }
-
-  &--colophon {
-    background: var(--yellow-4);
-  }
-
-  &--elsewhere {
-    background: var(--cyan-4);
-  }
-
   &--footer {
     background: var(--camo-4);
-  }
-
-  &--latest {
-    background: var(--orange-4);
-    display: flex;
-    flex-direction: column;
-    grid-row: span 2;
-    justify-content: flex-start;
-
-    @media (width < 768px) {
-      grid-column: span 2;
-      grid-row: 1;
-    }
   }
 
   &--page {
     max-width: 1024px;
     margin: var(--size-fluid-2) auto;
-  }
-
-  &--recent-links {
-    grid-column: span 2;
-
-    blockquote {
-      max-width: unset;
-    }
-  }
-
-  &--tags {
-    background: var(--indigo-4)
   }
 
   &__title {
@@ -175,26 +124,6 @@ main.index {
     margin: var(--size-fluid-1);
     max-width: var(--size-content-3);
     text-align: center;
-
-    &--about {
-      background: var(--red-2);
-    }
-
-    &--colophon {
-      background: var(--yellow-2);
-    }
-
-    &--elsewhere {
-      background: var(--cyan-2);
-    }
-
-    &--latest {
-      background: var(--orange-2);
-    }
-
-    &--tags {
-      background: var(--indigo-2)
-    }
   }
 
   &:hover,&:focus-within {
@@ -555,13 +484,6 @@ main.index {
   gap: var(--size-1);
   justify-content: space-around;
   margin: auto 0;
-}
-
-.card--colophon {
-  display: flex;
-  flex-flow: column nowrap;
-  gap: var(--size-2);
-  justify-content: space-between;
 }
 
 .icon-tabler-rss {
