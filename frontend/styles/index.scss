@@ -391,16 +391,18 @@ main.post {
   }
 
   &__reply-button {
-    background: var(--orange-4);
+    background: var(--jungle-2) !important;
+    border-radius: var(--radius-3);
     border: var(--border-size-2) solid;
     box-shadow: var(--size-1) var(--size-1) var(--gray-12);
-    font-weight: var(--font-weight-5);
+    display: inline-block;
+    font-size: var(--font-size-1);
     line-height: 36px;
     min-width: var(--size-12);
+    overflow-wrap: break-word;
     padding: var(--border-size-3) var(--size-1);
     text-align: center;
     text-decoration: none;
-    vertical-align: middle;
 
     &:hover,&:focus {
       box-shadow: var(--size-2) var(--size-2) var(--gray-12);
@@ -421,31 +423,32 @@ main.post {
   }
 }
 
-.btn-container {
-  background: var(--orange-4);
+.kofi-container {
+  margin: var(--border-size-2) auto;
+}
+
+.kofi-button {
+  background: var(--blue-2);
+  border-radius: var(--radius-3);
   border: var(--border-size-2) solid;
   box-shadow: var(--size-1) var(--size-1) var(--gray-12);
+  display: inline-block;
+  font-size: var(--font-size-1);
+  font-weight: bold;
+  overflow-wrap: break-word;
   padding: var(--border-size-3) var(--size-1);
   text-align: center;
+  text-decoration: none;
 
-  .kofi-button {
-    box-shadow: none;
-    height: 100%;
-    
-    .kofitext {
-      color: var(--gray-12) !important;
-      font-family: var(--font-geometric-humanist);
-      font-size: var(--font-size-1);
+  span {
+    text-align: center;
+  }
 
-      img.kofiimg {
-        height: 21px !important;
-        width: 31px !important;
-
-        &::after {
-          height: var(--size-px-9);
-        }
-      }
-    }
+  img {
+    animation: var(--animation-pulse);
+    display: inline;
+    height: 25px;
+    vertical-align: middle;
   }
 
   &:hover,&:focus-within {
