@@ -15,6 +15,10 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 - `Removed` for now removed features or content.
 - `Fixed` for any typos or bug fixes.
 
+## 2024-10-09
+
+- Added [Introducing the heyjohn Forum](/p/introducing-heyjohn-forum/)
+
 ## 2024-10-08
 
 - Fixed syntax highlighting

@@ -5,7 +5,9 @@ description: "I'm now running my own private social media website for my friends
 lastmod: 2024-07-07
 publish: true
 slug: "heyjohn"
-tags: ["technology"]
+tags:
+  - community
+  - empathy
 title: "heyjohn: A Vision For A Better Social Media"
 toc: true
 ---
@@ -96,6 +98,8 @@ Finally, I have some ideas for features and bots that may or may not make it in 
 I set all this up for selfish reasons: I miss my friends and I want a sustainable platform to foster connection between people I care about. At the same time, I really want this to be a positive force in everyone's lives who uses it. There are plenty of places, online and off, where you can't be who you are or have to don some kind of identity that isn't really yours.
 
 I hope that heyjohn can be a pleasant respite.
+
+*Note: I wrote a <%= link_to "follow-up", "collections/_p/introducing-heyjohn-forum.md", class: "internal-link" %> to this after replacing Mastodon with a forum. The vision hasn't changed but the platform has.*
 
 ## Gratitude
 
