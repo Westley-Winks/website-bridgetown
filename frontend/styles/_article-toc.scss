@@ -116,7 +116,21 @@
     h4,
     h5,
     h6 {
+      font-family: var(--font-didone);
+      font-size: var(--font-size-fluid-2);
       text-decoration: underline;
+    }
+
+    h1 {
+      background: var(--pink-2);
+      border: var(--border-size-2) solid;
+      box-shadow: var(--size-1) var(--size-1) var(--gray-12);
+      font-size: var(--font-size-fluid-3);
+      margin: var(--size-fluid-2) var(--size-fluid-1);
+      max-width: var(--size-content-3);
+      text-align: center;
+      text-decoration: none;
+      word-wrap: break-word;
     }
 
     .post-footer {
