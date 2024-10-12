@@ -6,14 +6,10 @@ title: Changelog
 toc: true
 ---
 
-All notable changes to this project will be documented in this file.
+## 2024-10-12
 
-The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/), and this project adheres to [Calendar Versioning](https://calver.org/).
-
-- `Added` for new features or content.
-- `Changed` for changes in existing features or content.
-- `Removed` for now removed features or content.
-- `Fixed` for any typos or bug fixes.
+- Moved post titles out of the navbar and into the posts themselves
+- Added Atkinson Hyperlegible font
 
 ## 2024-10-09
 

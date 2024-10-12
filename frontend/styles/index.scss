@@ -2,6 +2,7 @@
 @use "article-toc";
 @use "home";
 @import "variables";
+@import url(https://fonts.bunny.net/css?family=atkinson-hyperlegible:400,400i,700,700i);
 
 html {
   font-size: 18px;
@@ -10,7 +11,7 @@ html {
 body {
   background: var(--gray-8);
   color: var(--gray-12);
-  font-family: var(--font-geometric-humanist);
+  font-family: 'Atkinson Hyperlegible', var(--font-geometric-humanist);
   line-height: var(--font-lineheight-3);
   margin: 0 auto;
   max-width: 1920px;
@@ -54,7 +55,6 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: var(--font-didone);
   margin-top: var(--size-3);
   text-align: left;
 }
@@ -187,7 +187,6 @@ main.post {
 
   &__title {
     color: inherit;
-    font-family: var(--font-didone);
     font-size: var(--font-size-fluid-3);
     font-weight: bold;
     line-height: var(--font-lineheight-0);
