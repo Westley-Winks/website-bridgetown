@@ -6,6 +6,10 @@ title: Changelog
 toc: true
 ---
 
+## 2024-10-13
+
+- Added [If You Can Read This, You Can Learn Anything](/peace-corps/if-you-can-read-this/)
+
 ## 2024-10-12
 
 - Moved post titles out of the navbar and into the posts themselves
