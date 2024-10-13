@@ -2,7 +2,7 @@
 @use "article-toc";
 @use "home";
 @import "variables";
-@import url(https://fonts.bunny.net/css?family=atkinson-hyperlegible:400,400i,700,700i);
+@import url(https://fonts.bunny.net/css?family=atkinson-hyperlegible:400,400i,700,700i|syne:400,700);
 
 html {
   font-size: 18px;
@@ -55,6 +55,7 @@ h3,
 h4,
 h5,
 h6 {
+  font-family: 'Syne', var(--font-didone);
   margin-top: var(--size-3);
   text-align: left;
 }
@@ -187,6 +188,7 @@ main.post {
 
   &__title {
     color: inherit;
+    font-family: 'Syne', var(--font-didone);
     font-size: var(--font-size-fluid-3);
     font-weight: bold;
     line-height: var(--font-lineheight-0);
