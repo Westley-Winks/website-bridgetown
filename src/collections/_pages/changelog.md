@@ -6,9 +6,14 @@ title: Changelog
 toc: true
 ---
 
+## 2024-10-14
+
+- Added [weeknotes 2024W41](/w/2024W41/)
+
 ## 2024-10-13
 
 - Added [If You Can Read This, You Can Learn Anything](/peace-corps/if-you-can-read-this/)
+- Added Syne font to headings
 
 ## 2024-10-12
 
