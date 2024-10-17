@@ -12,7 +12,7 @@ title: "How I solved an online treasure hunt"
 toc: true
 ---
 
-My friend [foreverliketh.is](https://foreverliketh.is) shared a link to a treasure hunt hosted by Suntup Editions, [a book publishing company.](https://suntup.press/news/suntup-editions-treasure-hunt-contest/) The challenge was to find 16 colored letters scattered across their website. Once you find all the letters, you unscramble them into a three-word Latin phrase. The potential prizes were _awesome._ The grand prize was a custom-bound edition of _The Road_ by Cormac McCarthy, a piece of art in and of itself.[^1] Even if I didn't win anything, I can't say no to a puzzle. Here's how I solved it.
+My friend [foreverliketh.is](https://foreverliketh.is) shared a link to a treasure hunt hosted by Suntup Editions, [a book publishing company.](https://suntup.press/news/suntup-editions-treasure-hunt-contest/) The challenge was to find 16 colored letters scattered across their website. Once you find all the letters, you unscramble them into a three-word Latin phrase. The potential prizes were _awesome._ The grand prize was a custom-bound edition of _Blood Meridian_ by Cormac McCarthy, a piece of art in and of itself.[^1] Even if I didn't win anything, I can't say no to a puzzle. Here's how I solved it.
 
 ## Sitemaps helped me find all the letters
 

@@ -13,6 +13,7 @@ toc: true
 ## 2024-10-14
 
 - Added [weeknotes 2024W41](/w/2024W41/)
+- Cards and buttons now have a "bounce" effect on hover. Anything that moves on hover now has a slight animation and bounce.
 
 ## 2024-10-13
 
