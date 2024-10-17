@@ -6,6 +6,10 @@ title: Changelog
 toc: true
 ---
 
+## 2024-10-17
+
+- Added [How I solved an online treasure hunt](/p/suntup-treasure-hunt/)
+
 ## 2024-10-14
 
 - Added [weeknotes 2024W41](/w/2024W41/)
