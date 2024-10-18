@@ -8,6 +8,7 @@ publish: true
 slug: "brag-document-as-a-pcv"
 tags:
   - peace-corps
+  - career
 title: Why and How to Keep Track of Your Accomplishments as a PCV
 toc: true
 ---

@@ -10,7 +10,6 @@ status: read
 summary: "A semi-famous podcaster tells the story of an unassuming but highly manipulative woman. Little does she know, they're actually writing the true crime documentary she is the subject of."
 tags:
   - fiction
-  - thriller
 title: None Of This Is True
 toc: false
 website: https://www.goodreads.com/book/show/62334530-none-of-this-is-true

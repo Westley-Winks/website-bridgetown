@@ -5,7 +5,10 @@ description: "What I learned (re)building my website in Astro."
 lastmod: 2024-06-10
 publish: true
 slug: "creating-something"
-tags: ["technology", "carnival"]
+tags: 
+  - tech
+  - carnival
+  - plain-text
 title: "Creating Something"
 toc: true
 ---
