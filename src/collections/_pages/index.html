@@ -18,7 +18,7 @@ layout: index
   <ul class="latest-posts-list">
     <% posts=collections.b.resources + collections.p.resources + collections["peace-corps"].resources + [collections.w.resources.first] %>
     <% posts.sort_by! { |post| post.date.to_date }.reverse! %>
-    <% posts[0...8].each do |post| %>
+    <% posts[0...6].each do |post| %>
       <li class="latest-posts-list__item">
         <h3 class="latest-posts-list__item-title">
           <%= link_to post.data.title, post.relative_url, class: "latest-posts-list__item-title" %>
@@ -43,20 +43,15 @@ layout: index
   <h2 class="card__title">Recent links</h2>
   <div class="card__content">
     <%= markdownify do %>
+      - [On feeling connected](https://www.henrikkarlsson.xyz/p/giving) by Henrik Karlsson. Karlsson describes giving as "an act of potency." I've been thinking about better language for "serving" or "giving" that doesn't sound so zero-sum. When I do things for others, it gives me life and meaning—positive sum. I don't quite know how to convey that succinctly yet. "Potency" is _close_ but not quite right.
+      - [Emily McDowell on Reclaiming Creativity, Navigating Burnout, and Finding Balance](https://www.goodworkshow.com/emily-mcdowell-on-reclaiming-creativity-navigating-burnout-and-finding-balance/) on the Good Work podcast. I love when Brooks gets vulnerable and goes back and forth with the guest. He talked about approaching uncertainties with an "open-handed posture" and I really needed to hear that. I need to trust myself to respond to things with integrity. I completely trust Present Me yet it's so hard to do the same with Future Me.
+      - [Nature's many attempts to evolve a Nostr](https://newsletter.squishy.computer/p/natures-many-attempts-to-evolve-a) by Gordon Brander. Walks through different network architectures from traditional centralized ones to federation to peer-to-peer to Relay—a fundamentally different one being explored by Nostr. Users own their keys (like peer-to-peer) while still being able to scale (like centralized servers).
+      - [Can you run the UK economy?](https://ig.ft.com/chancellor-game/) by the Financial Times. You're the chancellor and you need to create a fiscal plan that doesn't tank the economy. Citizens did not particularly like my tax plan.
+      - [Math Encrypt](https://scientific.place/math-encrypt/) by k4rim. Turns any positive integer into a math equation.
+      - [Alt text selfies](https://alttextselfies.net/welcome/) by Olivia, Bojana, and Finnegan. A collection of self-portrait descriptions using text. Reading how people describe themselves makes me smile.
+      - [Haves and choices](https://everythingchanges.us/blog/haves-and-choices/) by Mandy Brown at everything changes. On the difference in mindset between saying you "have to" versus saying that you "choose to."
       - [HTML For People](https://htmlforpeople.com/) by Blake Watson. Anybody can make a website and this beautifully designed web book goes from "never coded before" to having your own. Everyone should have their own corner of the internet and this guide makes it accessible.
       - [how to buy shoes in the fediverse](https://www.wrecka.ge/fediverse-shoes/) by Erin Kissane. Why it's hard to find a home server on the fediverse. Server governance isn't one-size-fits-all and they don't all work for everyone.
-      - [Typing Bowl.](https://typingbowl.com/) Race players by typing faster than them.
-      - [The Static Site Paradox](https://kristoff.it/blog/static-site-paradox/) by Loris Cro. Static sites are faster, safer, and simpler. But making a dynamic one full of junk is much easier to make with a website builder. This leads to over-engineered websites that are way too complex for most people.
-      - [A peasant woodland](https://aworkinglibrary.com/writing/peasant-woodland) by Mandy Brown. Thoughts on why and how writers look for readers.
-      	> We write because something needs to be expressed through us, and only by giving the writing to a reader is that need fulfilled.
-
-      	> This is perhaps the greatest conundrum of our current technological era: the desperate need to connect with one another, because it is our only hope of survival; combined with the fact that nearly all the means of connection available to us are deeply—possibly irredeemably—fucked.
-      - [I love your week notes and day notes and art and lists](https://anniemueller.com/posts/i-love-your-week-notes-and-day-notes-and-art-and-lists) by Annie Mueller. Even when you think you are boring or have nothing to contribute, **share anyways.**
-      	> I like your daily meandering thoughts. I like you describing your routine. I like hearing about the things outside of your routine, too. Did you go to the doctor’s? How did it go? Did you have an unexpected visitor? How was that for you? I’m interested. Tell us what’s on your mind. Tap away in the little keyboard and put part of your experience of the hour or day or week into words and share it with us.
-      - [Write as you wish: a call to bring back the prose](https://marisabel.nl/public/blog/Write_as_you_wish:_a_call_to_bring_back_the_prose) by Marisabel Munoz and [Prose, circumlocution and cantinfleadas](https://joelchrono.xyz/blog/2024-10-09-prose-circumlocution-and-cantinfleadas/) by Joel Chrono. Interesting thoughts on writing more verbose _when it's necessary._ There is a time and a place for brevity and both the audience and the topic determine how you should communicate.
-      - [Metric-Less Success](https://moretothat.com/metric-less-success/) by Lawrence Yeo at More to That. Important things in life that are the *real* goalposts usually can't be measured by an external number. Treating people with compassion can't be measured. Living with integrity can't be put into a number.
-      - [anh's home page.](https://anhvn.com/) Beautifully and expertly crafted and kind of creepy. Incredible.
-      - [How I Experience the Web Today](https://how-i-experience-web-today.com/) by Guangyi Li. A satirical look at modern websites and their god awful popups, modals, ads, and paywalls.
       <% end %>
   </div>
 </section>
