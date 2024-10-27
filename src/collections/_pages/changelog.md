@@ -6,6 +6,10 @@ title: Changelog
 toc: true
 ---
 
+## 2024-10-27
+
+- Added [weeknotes 2024W43](/w/2024w43/)
+
 ## 2024-10-24
 
 - Added [Childhood's End](/b/childhoods-end/)
