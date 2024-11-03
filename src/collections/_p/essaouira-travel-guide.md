@@ -1,11 +1,13 @@
 ---
+alias: Essaouira Travel Guide
 copy_path: "_p/essaouira-travel-guide.md"
 date: 2023-09-29
 description: A working list of places to go to when you are in Essaouira, Morocco.
-lastmod: 2024-02-25
+lastmod: 2024-10-30
 publish: true
 slug: "essaouira-travel-guide"
-tags: ["travel"]
+tags:
+  - travel
 title: Essaouira Travel Guide
 toc: true
 ---
@@ -14,7 +16,7 @@ One of my favorite places in Morocco, among many others, is Essaouira. It is a c
 
 ## Getting There
 
-There are taxis pretty much all day that go straight from Marrakech to Essaouira. A seat in the taxi will cost you about 80 dirhams. There is also a CTM bus that leaves Marrakech every day at 08:30 for 90 dirhams.
+There are taxis pretty much all day that go straight from Marrakech to Essaouira. A seat in the taxi will cost you about 100 dirhams. There is also a CTM bus that leaves Marrakech every day at 08:30 for 90 dirhams.
 
 If you are coming from Agadir to the south, you can take either a taxi or the CTM. The road is beautiful as it goes along the ocean but it has a lot of turns and the road sucks. The taxi is faster but if you are prone to motion sickness, go for the CTM. There are three a day and each take about three and a half hours and will cost 95 dirhams.
 
@@ -35,7 +37,7 @@ There are lots of options here but I've only personally used a few of them.
 - **Taverna Bolognese.** Nice little Italian place tucked into an alley in the medina. Good cocktails and wine.
 - **Salt and Pepper.** This is the place to go for sushi. It has a nice cozy atmosphere and there are some round cats that lounge around inside. And, yes, it's open. The door and spacious interior suggest otherwise but it is open.
 - **Gelato in the medina.** Right next to Asian Red Food, this place causes lots of street congestion at night because everyone wants gelato. They've got all kinds of flavors but it is kind of expensive for what it is. Nonetheless, it is fantastic.
-- **Caffetteria Dolcefreddo.** If you want some *good* gelato, leave the medina and head southeast, right next to the CTM station. There are lots of little restaurants and cafes here but I've never tried them.
+- **Caffetteria Dolcefreddo.** If you want some _good_ gelato, leave the medina and head southeast, right next to the CTM station. I'm not sure if they have it all the time but I got gnocchi with tomato sauce and it was absolutely incredible. There are lots of little restaurants and cafés around here too.
 - **The Hungry Nomad.** I haven't gone there yet but it looks like a cool rooftop restaurant/bar. Also a hostel down below.
 - **Sisterhood Cafe.** Quaint little coffee shop on the north end of the medina. This has wonderful "quiet cafe" vibes that make you want to crack open a book.
 
