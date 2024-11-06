@@ -117,7 +117,7 @@ main.cv {
 
   &--2 {
     grid-column: 1 / span 4;
-    grid-row: 7;
+    grid-row: 8;
   }
 
   &--3 {
@@ -146,12 +146,22 @@ main.cv {
   }
 }
 
+.card.achievements {
+  background: var(--yellow-4);
+  grid-column: 5 / span 8;
+  grid-row: 6 / span 1;
+
+  >h2 {
+    background: var(--yellow-2);
+  }
+}
+
 .card.latest {
   background: var(--lime-4);
   display: flex;
   flex-direction: column;
   grid-column: 1 / span 4;
-  grid-row: 6;
+  grid-row: 6 / span 2;
   justify-content: flex-start;
 
   >h2 {
@@ -161,5 +171,5 @@ main.cv {
 
 .card.more-experience {
   grid-column: 5 / span 8;
-  grid-row: 6 / span 2;
+  grid-row: 7 / span 2;
 }
