@@ -1,10 +1,14 @@
 ---
 description: "Changelog for my website."
-lastmod: 2024-09-18
+lastmod: 2024-11-18
 layout: post
 title: Changelog
 toc: true
 ---
+
+## 2024-11-18
+
+- Added [weeknotes 2024W46](/w/2024w46/)
 
 ## 2024-11-11
 
