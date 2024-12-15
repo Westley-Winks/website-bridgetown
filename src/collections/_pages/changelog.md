@@ -6,6 +6,10 @@ title: Changelog
 toc: true
 ---
 
+## 2024-12-15
+
+- Added [weeknotes 2024W50](/w/2024w50/)
+
 ## 2024-12-13
 
 - Added [How I journal](/p/how-i-journal/)
