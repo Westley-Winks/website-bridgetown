@@ -6,6 +6,11 @@ title: Changelog
 toc: true
 ---
 
+## 2024-12-22
+
+- Added `scroll-padding` to CSS. There is now a gap between the content and the top of the screen after clicking an internal anchor link (like in a table of contents)
+- Added [weeknotes 2024W51](/w/2024w51/)
+
 ## 2024-12-15
 
 - Added [weeknotes 2024W50](/w/2024w50/)
