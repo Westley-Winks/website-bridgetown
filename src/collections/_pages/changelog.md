@@ -6,6 +6,10 @@ title: Changelog
 toc: true
 ---
 
+## 2024-12-28
+
+- Added book notes for [A Wizard of Earthsea](/b/a-wizard-of-earthsea/)
+
 ## 2024-12-22
 
 - Added `scroll-padding` to CSS. There is now a gap between the content and the top of the screen after clicking an internal anchor link (like in a table of contents)
