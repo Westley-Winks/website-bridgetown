@@ -6,6 +6,10 @@ title: Changelog
 toc: true
 ---
 
+## 2024-12-29
+
+- Added [weeknotes 2024W52](/w/2024w52/)
+
 ## 2024-12-28
 
 - Added book notes for [A Wizard of Earthsea](/b/a-wizard-of-earthsea/)
