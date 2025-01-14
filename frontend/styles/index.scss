@@ -226,11 +226,12 @@ main.post {
   }
 
   &__link-container {
-    display: flex;
-    gap: var(--size-fluid-1);
-    flex-flow: row wrap;
-    justify-content: right;
     align-items: center;
+    display: flex;
+    flex-flow: row wrap;
+    gap: var(--size-fluid-1);
+    justify-content: right;
+    margin-left: auto;
   }
 }
 

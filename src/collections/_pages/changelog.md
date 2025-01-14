@@ -9,6 +9,8 @@ toc: true
 ## 2025-01-14
 
 - Added [weeknotes 2025W02](/w/2025w02/)
+- Changed "Books" to "Bookshelf" in nav bar and footer. Some people thought I was an author.
+- Updated CSS to push the nav bar links to the right so it fills the space better on mid-size screens
 
 ## 2025-01-05
 
