@@ -7,6 +7,9 @@
       <a class="content-list__link" href="<%= item.relative_url %>">
         <h2 class="content-list__title card__title"><%= item.data.title %></h2>
       </a>
+      <% if item.data.author %>
+        <span class="content-list__author"><%= item.data.author %> | </span>
+      <% end %>
       <time datetime="<%= item.data.date %>"><%= item.data.date.to_date %></time>
       <% if item.data.summary %>
         <p><%= markdownify item.data.summary%></p>

@@ -89,7 +89,7 @@ p {
 }
 
 time {
-  color: var(--red-12);
+  color: var(--gray-8);
 }
 
 main.page,
@@ -157,10 +157,6 @@ main.post {
     border-bottom: var(--border-size-1) dashed;
     flex: 1;
     max-width: unset;
-  }
-
-  &__date {
-    color: var(--red-12);
   }
 
   &__item-title {
@@ -259,6 +255,10 @@ main.post {
         background: var(--#{$color}-2);
       }
     }
+  }
+
+  &__author {
+    color: var(--gray-8);
   }
 
   &__item {
