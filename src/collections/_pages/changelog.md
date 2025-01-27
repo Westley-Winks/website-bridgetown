@@ -6,6 +6,15 @@ title: Changelog
 toc: true
 ---
 
+## 2025-01-27
+
+- Added [weeknotes 2025W04](/w/2025w04/)
+
+## 2025-01-26
+
+- Added book authors to [bookshelf](/b/) entries
+- Changed color of dates and extra information. It was previously a light red that didn't really make sense and didn't have enough contrast. It is now a light grey so that it is still readable while not drawing the eye.
+
 ## 2025-01-19
 
 - Added [weeknotes 2025W03](/w/2025w03/)
