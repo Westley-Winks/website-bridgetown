@@ -6,6 +6,10 @@ title: Changelog
 toc: true
 ---
 
+## 2025-02-16
+
+- Added [weeknotes 2025W07](/w/2025w07/)
+
 ## 2025-02-10
 
 - Added [weeknotes 2025W06](/w/2025w06/)
