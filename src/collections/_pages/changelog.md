@@ -6,6 +6,10 @@ title: Changelog
 toc: true
 ---
 
+## 2025-03-09
+
+- Added [weeknotes 2025W10](/w/2025w10/)
+
 ## 2025-03-05
 
 - Updated [résumé](/cv/#projects) to include recent client website
