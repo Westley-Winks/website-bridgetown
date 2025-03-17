@@ -8,6 +8,7 @@ toc: true
 
 ## 2025-03-16
 
+- Removed Goatcounter analytics in favor of Fathom
 - Added [weeknotes 2025W11](/w/2025w11/)
 
 ## 2025-03-09
