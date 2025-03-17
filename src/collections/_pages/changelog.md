@@ -6,6 +6,10 @@ title: Changelog
 toc: true
 ---
 
+## 2025-03-17
+
+- Updated [résumé](/cv/#projects) to include recent client website
+
 ## 2025-03-16
 
 - Removed Goatcounter analytics in favor of Fathom
