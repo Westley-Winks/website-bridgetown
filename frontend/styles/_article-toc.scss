@@ -133,6 +133,16 @@
       word-wrap: break-word;
     }
 
+    .task-list {
+      list-style: none;
+      margin-top: var(--size-fluid-2);
+      padding: 0;
+
+      .task-list-item-checkbox {
+        margin-right: var(--size-2);
+      }
+    }
+
     .post-footer {
       align-items: flex-end;
       display: flex;
