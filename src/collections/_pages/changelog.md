@@ -8,6 +8,7 @@ toc: true
 
 ## 2025-03-17
 
+- Added [a post](/p/fiction-review-checklist/) about how I review fiction books
 - Updated [résumé](/cv/#projects) to include recent client website
 
 ## 2025-03-16
