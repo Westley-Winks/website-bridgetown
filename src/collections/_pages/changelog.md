@@ -9,6 +9,7 @@ toc: true
 ## 2025-03-23
 
 - Removed snow-fall web component. It's officially spring.
+- Added [weeknotes 2025W12](/w/2025w12/)
 
 ## 2025-03-17
 
