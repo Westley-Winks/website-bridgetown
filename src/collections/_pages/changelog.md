@@ -6,6 +6,10 @@ title: Changelog
 toc: true
 ---
 
+## 2025-03-23
+
+- Removed snow-fall web component. It's officially spring.
+
 ## 2025-03-17
 
 - Added [a post](/p/fiction-review-checklist/) about how I review fiction books

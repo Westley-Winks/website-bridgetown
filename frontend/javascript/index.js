@@ -1,6 +1,5 @@
 import "$styles/index.scss"
 import "$styles/syntax-highlighting"
-import "$javascript/snow-fall"
 
 // import styles from "../**/*.{scss,css}"
 // Object.entries(styles).forEach(style => style)
