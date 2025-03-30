@@ -6,6 +6,10 @@ title: Changelog
 toc: true
 ---
 
+## 2025-03-30
+
+- Added [weeknotes 2025W13](/w/2025w13/)
+
 ## 2025-03-23
 
 - Removed snow-fall web component. It's officially spring.
