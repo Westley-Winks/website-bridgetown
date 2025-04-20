@@ -70,8 +70,13 @@ li {
 }
 
 blockquote {
-  margin-top: var(--size-3);
+  margin-top: var(--size-2);
+  margin-bottom: var(--size-3);
   padding-block: var(--size-1);
+
+  p {
+    margin-top: 0;
+  }
 }
 
 hr {
