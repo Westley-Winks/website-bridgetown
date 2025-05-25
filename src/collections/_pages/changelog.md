@@ -6,6 +6,13 @@ title: Changelog
 toc: true
 ---
 
+- seed
+{:toc}
+
+## 2025-05-25
+
+- Added [weeknotes 2025W21](/w/2025w21)
+
 ## 2025-05-18
 
 - Added [weeknotes 2025W20](/w/2025w20)
