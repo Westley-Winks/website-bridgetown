@@ -1,6 +1,6 @@
 ---
 description: "Changelog for my website."
-lastmod: 2024-11-18
+lastmod: 2025-06-01
 layout: post
 title: Changelog
 toc: true
@@ -8,6 +8,10 @@ toc: true
 
 - seed
 {:toc}
+
+## 2025-06-01
+
+- Added [weeknotes 2025W22](/w/2025w22)
 
 ## 2025-05-25
 
