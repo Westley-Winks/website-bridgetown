@@ -20,5 +20,6 @@
   },
   "dependencies": {
     "open-props": "^1.7.6"
-  }
+  },
+  "packageManager": "yarn@4.9.2"
 }
